@@ -34,7 +34,7 @@ async def on_message(message):
   if message.content.startswith('$date'):
      await message.channel.send("Today is " + datetime.now().strftime("%A %b %d %Y"))
 
-print("something")
+
 # both getenv() method and using the environ[?] dictionary accepted
 client.run(os.getenv('TOKEN'))
 
